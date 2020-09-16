@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-8">
+      <ngb-carousel>
+        <ng-template *ngFor="let imgs of slides" ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img src="{{imgs.img}}" alt="Random first slide">
+          </div>
+          <div class="carousel-caption">
+            <h3>{{imgs.name}}</h3>
+            <p>{{imgs.desc}}</p>
+          </div>
+        </ng-template>
+      </ngb-carousel>
+    </div>
+    <div class="col-md-2">
+
+    </div>
+  </div>
+</div>
